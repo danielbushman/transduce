@@ -1,5 +1,5 @@
 {
-  "name": "translate-material",
+  "name": "transform-json",
   "version": "0.1.0",
     "description": "Transform JSON objects.",
   "main": "index.js",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/materialized/translate-material.git"
+    "url": "git+https://github.com/materialized/transform-json.git"
   },
   "keywords": [
     "JSON",
@@ -24,7 +24,7 @@
   "author": "Daniel Bushman",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/materialized/translate-material/issues"
+    "url": "https://github.com/materialized/transform-json/issues"
   },
-  "homepage": "https://github.com/materialized/translate-material#readme"
+  "homepage": "https://github.com/materialized/transform-json#readme"
 }
