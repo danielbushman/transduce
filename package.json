@@ -1,13 +1,13 @@
 {
   "name": "transform-json",
   "version": "0.1.0",
-    "description": "Transform JSON objects.",
+  "description": "Transform JSON objects.",
   "main": "index.js",
   "directories": {
     "test": "test"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "mocha --compilers js:babel/register"
   },
   "repository": {
     "type": "git",
@@ -21,10 +21,21 @@
     "change",
     "closures"
   ],
+  "babel": {
+    "only": "*.es6"
+  },
   "author": "Daniel Bushman",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/materialized/transform-json/issues"
   },
-  "homepage": "https://github.com/materialized/transform-json#readme"
+  "homepage": "https://github.com/materialized/transform-json#readme",
+  "devDependencies": {
+    "babel": "^5.8.21",
+    "chai": "^3.2.0",
+    "mocha": "^2.2.5"
+  },
+  "dependencies": {
+    "immutable": "^3.7.4"
+  }
 }
