@@ -1,6 +1,6 @@
 # transform-json
 
-Transforms JSON from one schema to another. Such a simple thing that I haven't seen a good solution for. The primary aim is targeted at transformation templates that are clean, clear, and quick to use, since in the end, that's the the bulk of the time spent using the library.
+Transforms JSON from one schema to another. Such a simple thing that needs to be done all the time, and yet I haven't seen a solution I like. The overriding design goal is an elegant template syntax. Most of the time spent using the library will be in the templates. They should be natural to read and quick to use. The template should look like what it will generate. 
 
 # TODO
 
@@ -25,8 +25,8 @@ Transforms JSON from one schema to another. Such a simple thing that I haven't s
 
 ## Polish
 
+- [ ] Establish *performance measuring strategy* (something better than jsperf?)
 - [ ] curry up: findPath = path(path); findPath(json)
-- [ ] Do immutability performance test
 - [ ] Improve functional purity
 
 ## Settle on some things
@@ -36,6 +36,7 @@ Transforms JSON from one schema to another. Such a simple thing that I haven't s
 ## Productize library
 
 - [ ] Add transpile configuration.
+- [ ] CI tags
 - [ ] Write documentation.
 - [ ] Create gh-page.
 
