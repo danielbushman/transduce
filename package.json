@@ -1,0 +1,30 @@
+{
+  "name": "translate-material",
+  "version": "0.1.0",
+    "description": "Transform JSON objects.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/materialized/translate-material.git"
+  },
+  "keywords": [
+    "JSON",
+    "transform",
+    "translate",
+    "schema",
+    "change",
+    "closures"
+  ],
+  "author": "Daniel Bushman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/materialized/translate-material/issues"
+  },
+  "homepage": "https://github.com/materialized/translate-material#readme"
+}
