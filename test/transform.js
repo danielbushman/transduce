@@ -12,7 +12,7 @@ var original = {
   'key_for_negative_number': -1,
   'key_for_simple_object': {'key': 'value'},
   'key_for_simple_list': [7,8,9],
-  'key_for_list_iteration': [{'key': 77},{'key': 88},{'key': 99}]
+  'key_for_list_iteration': [{'key': 99}]
 }
 
 var template = {
@@ -23,7 +23,7 @@ var template = {
   'negative_number': 'key_for_negative_number',
   'simple_object_value': 'key_for_simple_object.key',
   'simple_list_value': 'key_for_simple_list[2]',
-  'sub_list_value': 'key_for_list_iteration[2].key'
+  'sub_list_value': 'key_for_list_iteration[0].key'
 }
 
 var transformed = {
