@@ -1,7 +1,7 @@
 {
   "name": "transform-json",
   "version": "0.1.0",
-    "description": "Transform JSON objects.",
+  "description": "Transform JSON objects.",
   "main": "index.js",
   "directories": {
     "test": "test"
@@ -26,5 +26,16 @@
   "bugs": {
     "url": "https://github.com/materialized/transform-json/issues"
   },
-  "homepage": "https://github.com/materialized/transform-json#readme"
+  "homepage": "https://github.com/materialized/transform-json#readme",
+  "devDependencies": {
+    "atom-ui-reporter": "0.0.1",
+    "babel": "^5.8.21",
+    "chai": "^3.2.0",
+    "gulp-plumber": "^1.0.1",
+    "gulp-watch": "^4.3.4",
+    "mocha": "^2.2.5"
+  },
+  "dependencies": {
+    "immutable": "^3.7.4"
+  }
 }
