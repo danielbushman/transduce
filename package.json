@@ -7,7 +7,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "mocha --compilers js:babel/register"
+    "test": "mocha"
   },
   "repository": {
     "type": "git",
@@ -21,9 +21,6 @@
     "change",
     "closures"
   ],
-  "babel": {
-    "only": "*.es6"
-  },
   "author": "Daniel Bushman",
   "license": "MIT",
   "bugs": {
@@ -31,6 +28,7 @@
   },
   "homepage": "https://github.com/materialized/transform-json#readme",
   "devDependencies": {
+    "atom-ui-reporter": "0.0.1",
     "babel": "^5.8.21",
     "chai": "^3.2.0",
     "mocha": "^2.2.5"
