@@ -7,7 +7,7 @@ Transforms JSON from one schema to another. Such a simple thing that needs to be
 ## Bare bones
 
 - [x] Use [Atom](https://atom.io/) as text editor.
-- [ ] Add gulp transpile watch.
+- [x] Add gulp transpile watch.
 - [x] Add Mocha config and runner in Atom.
 
 ## Streamlining development
@@ -20,8 +20,8 @@ Transforms JSON from one schema to another. Such a simple thing that needs to be
 
 ### rapid dot.notation implementation
 
-- [ ] path(path, json)
-- [ ] transform(template, json)
+- [x] path(path, json)
+- [x] transform(template, json)
 - [ ] template = {'literal': literal('key')}
 
 ## Polish

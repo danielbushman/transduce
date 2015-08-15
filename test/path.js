@@ -4,6 +4,12 @@ var assert = require("assert");
 var path = require("../dist/path.js");
 
 describe('path', function () {
+  describe("path('key', 'value')", function () {
+    it('should return value located at the dot notation path', function () {
+      var obj = {key: 'value'};
+      assert.equal(path('key', obj), 'value');
+    });
+  });
   describe("path('dot.notation.path', obj)", function () {
     it('should return value located at the dot notation path', function () {
       var obj = { dot: { notation: { path: 42 } } };
