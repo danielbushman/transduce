@@ -1,7 +1,7 @@
 "use strict";
 
 var assert = require("assert");
-var path = require("../src/path.js");
+var path = require("../dist/path.js");
 
 describe('path', function () {
   describe("path('dot.notation.path', obj)", function () {

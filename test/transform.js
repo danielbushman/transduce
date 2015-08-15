@@ -2,7 +2,7 @@
 
 var assert = require("assert");
 var expect = require('chai').expect;
-var transform = require("../src/transform.js");
+var transform = require("../dist/transform.js");
 
 var original = {
   'key_for_string_value': 'string value',

@@ -2,10 +2,10 @@
 var UNDEFINED;
 
 var assert = require("assert");
-var N = require("../src/N.js");
+var N = require("../dist/N.js");
 
 describe('N', function () {
-  it("should return the provided number if it's alone", function () {
+  it("should return the provided number if it's alone", ()=> {
     assert.equal(N(3), 3);
   });
   it("should be undefined if 'i' is by itself", ()=> {
@@ -18,7 +18,7 @@ describe('N', function () {
     assert.equal(N('i', -3), -3);
   });
   it("should return the provided number even if a second number is passed", ()=> {
-    assert.equal(N(3, 4), false);
+    assert.equal(N(3, 4), 3);
   });
   it("should only allow 'i' as variable", function () {
     assert.equal(N('n', 0), UNDEFINED);
