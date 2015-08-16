@@ -22,6 +22,7 @@ Transforms JSON from one schema to another. Such a simple thing that needs to be
 
 - [x] path(path, json)
 - [x] transform(template, json)
+- [ ] port to lodash-fn before going any further
 - [ ] template = {'literal': literal('key')}
 
 ## Polish
