@@ -9,6 +9,7 @@ Transforms JSON from one schema to another. Such a simple thing that needs to be
 
 # Usage
 
+use babel: `gulp`
 run tests: `npm test`
 
 

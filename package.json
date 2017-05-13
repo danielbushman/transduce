@@ -31,11 +31,13 @@
     "atom-ui-reporter": "0.0.1",
     "babel": "^5.8.21",
     "chai": "^3.2.0",
+    "gulp-babel": "^6.1.2",
     "gulp-plumber": "^1.0.1",
     "gulp-watch": "^4.3.4",
     "mocha": "^2.2.5"
   },
   "dependencies": {
+    "gulp": "^3.9.1",
     "immutable": "^3.7.4",
     "ramda": "^0.23.0"
   }
