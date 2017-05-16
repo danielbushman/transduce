@@ -4,23 +4,18 @@ Transforms JSON from one schema to another. Such a simple thing that needs to be
 
 # Setup
 
-`npm i -g mocha`
-`npm i`
+# `npm i -g mocha`
+# `npm i`
 
 # Usage
 
-use babel: `gulp`
-run tests: `npm test`
-
+* use babel: `gulp`
+* run tests: `npm test`
 
 # TODO
 
 - [ ] rename folder and in package.json
 - [ ] use lodash-fp in place of Ramda
-
-## Scratchpad
-
-curry up: findPath = path(path); findPath(json)
 
 ----
 [![License](http://img.shields.io/:license-mit-blue.svg)](http://doge.mit-license.org)
