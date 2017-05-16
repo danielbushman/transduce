@@ -1,0 +1,20 @@
+{
+  "messages": [
+    {
+      "_type": "model/expression",
+      "name": "string",
+      "first letter of name": "THIS.name[0]"
+    },
+    {
+      "_type": "data in stream",
+      "name": "Bob",
+      "first letter of name": "THIS.name[0]",
+      "first letter of some sister's name": "(.name[0] (THIS)-[IS-SISTER-OF]->)"      
+    },
+    {
+      "_type": "node local data",
+      "name": "Bob",
+      "first letter of name": "b"
+    }
+  ]
+}
