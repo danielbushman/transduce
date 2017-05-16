@@ -1,24 +1,19 @@
-'use strict';
-
-var R = require('ramda');
-var Immutable = require('immutable');
-var path = require('./path.js');
+const R = require('ramda');
+const fp = require('lodash/fp');
+const path = require('./path.js');
 
 function transform(template, obj) {
-  if (R.type(obj) != 'Object') {
+  if (R.type(obj) !== 'Object') {
     return;
   }
 
-  if (R.type(template) == 'String') {
-    return 'ever?'; //path(template, obj, i);
-  }
-  return R.mapObj(function (value) {
-    if (R.type(value) == 'String') {
+  return fp.mapValues(value => {
+    if (R.type(value) === 'String') {
       return path(value, obj);
-    } else if (R.type(value) == 'Object') {
+    } else if (R.type(value) === 'Object') {
       return transform(value, obj);
-    } else if (R.type(value) == 'Array') {
-      return value.map(function (item) {
+    } else if (R.type(value) === 'Array') {
+      return value.map(item => {
         return transform(item, obj);
       });
     }

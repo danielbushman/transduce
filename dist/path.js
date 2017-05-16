@@ -1,19 +1,15 @@
-'use strict';
-
-var R = require('ramda');
-var Immutable = require('immutable');
-var N = require('./N.js');
+const R = require('ramda');
+const fp = require('lodash/fp');
 
 function path(path, obj, i) {
-  if (R.type(obj) != 'Object' || R.type(path) != 'String') {
+  if (typeof path !== 'string' || !obj || typeof obj !== 'object') {
     return;
   }
-  var val = Immutable.fromJS(obj);
-  path.split('.').map(function (prop) {
-    var m = R.match(/(.+)\[(i|\d+)\]/, prop);
-    val = m[1] ? val.get(m[1]).get(m[2] == "i" ? i : m[2]) : val.get(prop);
-  });
-  return val;
+  return fp.reduce((obj, key) => {
+    const m = key.match(/(.+)\[(i|\d+)\]/) || [];
+    // const m = R.match(/(.+)\[(i|\d+)\]/, key);
+    return m[1] ? obj[m[1]][m[2] === "i" ? i : m[2]] : obj[key];
+  }, obj, path.split('.'));
 }
 
 module.exports = path;

@@ -1,8 +1,7 @@
-"use strict";
 var UNDEFINED;
 
-var assert = require("assert");
-var N = require("../dist/N.js");
+const assert = require('assert');
+const N = require('../dist/N.js');
 
 describe('N', function () {
   it("should return the provided number if it's alone", ()=> {
@@ -20,7 +19,7 @@ describe('N', function () {
   it("should return the provided number even if a second number is passed", ()=> {
     assert.equal(N(3, 4), 3);
   });
-  it("should only allow 'i' as variable", function () {
+  it("should only allow 'i' as variable", ()=> {
     assert.equal(N('n', 0), UNDEFINED);
   })
 });
