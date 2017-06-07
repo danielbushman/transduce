@@ -1,28 +1,28 @@
-'use strict';
-
 var R = require('ramda');
 var Immutable = require('immutable');
-var path = require('./path.js');
+var URI = require('./URI.js');
 
-function transform(template, obj) {
+function mapValues(value) {
+  switch (R.type(value)) {
+    case 'String':
+      return URI(value)(obj);
+    case 'Object':
+      return transform(value, obj);
+    case 'Array':
+      return value.map(item => {
+        return transform(item, obj);
+      });
+  }
+}
+
+module.exports = function transform(template, obj) {
   if (R.type(obj) != 'Object') {
     return;
   }
 
   if (R.type(template) == 'String') {
-    return 'ever?'; //path(template, obj, i);
+    return URI(template)(obj)(i);
   }
-  return R.mapObj(function (value) {
-    if (R.type(value) == 'String') {
-      return path(value, obj);
-    } else if (R.type(value) == 'Object') {
-      return transform(value, obj);
-    } else if (R.type(value) == 'Array') {
-      return value.map(function (item) {
-        return transform(item, obj);
-      });
-    }
-  }, template);
-};
 
-module.exports = transform;
+  return R.map(mapValues, template);
+};
