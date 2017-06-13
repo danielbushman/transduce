@@ -6,7 +6,7 @@ function transform (template, obj) {
   if (R.type(obj) != 'Object') { return; }
 
   if (R.type(template) == 'String') {
-    return 'ever?'; //path(template, obj, i);
+    return path(template, obj, i);
   }
   return R.map((value) => {
     if (R.type(value) == 'String') {
