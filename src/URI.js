@@ -19,16 +19,3 @@ module.exports = function URI(uri) {
     return val;
   }
 }
-
-module.exports = function mapValues(value) {
-  switch(R.type(value)) {
-    case 'String':
-      return URI(value)(obj);
-    case 'Object':
-      return transform(value, obj);
-    case 'Array':
-      return value.map(item => {
-        return transform(item, obj);
-      });
-  }
-}
