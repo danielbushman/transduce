@@ -8,7 +8,7 @@ function transform (template, obj) {
   if (R.type(template) == 'String') {
     return 'ever?'; //path(template, obj, i);
   }
-  return R.mapObj((value) => {
+  return R.map((value) => {
     if (R.type(value) == 'String') {
       return path(value, obj);
     } else if (R.type(value) == 'Object') {

@@ -1,5 +1,3 @@
-'use strict';
-
 var R = require('ramda');
 var Immutable = require('immutable');
 var N = require('./N.js');
