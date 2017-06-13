@@ -38,7 +38,7 @@ var transformed = {
 }
 
 describe("transform", function () {
-  // it('should transform the original into the transformed using the template', function () {
-  //   expect(transform(template, original)).to.deep.equal(transformed);
-  // });
+  it('should transform the original into the transformed using the template', function () {
+    expect(transform(template, original)).to.deep.equal(transformed);
+  });
 });
